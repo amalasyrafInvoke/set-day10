@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  margin: 2rem auto;
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 10px;
+  /* background-color: #719FB0; */
+  background-color: maroon;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 1.5s;
+  z-index: 99;
+}
+
+#progress-bar:hover {
+  height: 15px;
+}
+
+section h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#section-1 {
+  height: 100vh;
+}
+
+#section-2 {
+  height: 100vh;
+}
+
+#hill-base {
+  width: 1000px;
+  height: 555px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(maroon, #eeb76b);
+}
+
+.layer {
+  width: 1200px;
+  height: 455px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#layer-1 {
+  background-image: url(../day10_challenge/images/layer_1.png);
+  background-position: bottom center;
+  top: 70px;
+}
+#layer-2 {
+  background-image: url(../day10_challenge/images/layer_2.png);
+  background-position: bottom center;
+  top: 75px;
+}
+#layer-3 {
+  background-image: url(../day10_challenge/images/layer_3.png);
+  background-position: bottom center;
+  top: 80px;
+}
+#layer-4 {
+  background-image: url(../day10_challenge/images/layer_4.png);
+  background-position: bottom center;
+  top: 85px;
+}
+#layer-5 {
+  background-image: url(../day10_challenge/images/layer_5.png);
+  background-position: bottom center;
+  top: 90px;
+}
+#layer-6 {
+  background-image: url(../day10_challenge/images/layer_6.png);
+  background-position: bottom center;
+}
+
+.layer-m {
+  width: 1200px;
+  height: 900px;
+  position: absolute;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#mountain-base {
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+#mountain-1 {
+  background-image: url(../day10_challenge/img/image.jpg);
+  background-position: top left;
+  top: -30px;
+}
+#mountain-2 {
+  background-image: url(../day10_challenge/img/mountain3.png);
+  background-position: center;
+  top: 230px;
+}
+#mountain-3 {
+  background-image: url(../day10_challenge/img/mountain2.png);
+  background-position: top left;
+  top: 520px;
+  left: -80px;
+}
+#mountain-4 {
+  background-image: url(../day10_challenge/img/mountain1.png);
+  background-position: top left;
+  top: 780px;
+}
+#mountain-5 {
+  background-image: url(../day10_challenge/img/person.png);
+  background-position: top right;
+  top: 500px;
+  left: -420px;
+}
